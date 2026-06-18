@@ -44,15 +44,15 @@ export const Footer: React.FC = () => {
             <ul className="space-y-6">
               <li className="flex items-start gap-4 text-gray-dark">
                 <MapPin size={20} className="text-primary shrink-0" />
-                <span>Av. Faria Lima, 4500 - Itaim Bibi, São Paulo - SP</span>
+                <span>XXXXXX</span>
               </li>
               <li className="flex items-center gap-4 text-gray-dark">
                 <Phone size={20} className="text-primary shrink-0" />
-                <span>+55 (11) 99999-9999</span>
+                <span>XXXXXX</span>
               </li>
               <li className="flex items-center gap-4 text-gray-dark">
                 <Mail size={20} className="text-primary shrink-0" />
-                <span>contato@dezign.com.br</span>
+                <span>XXXXXX</span>
               </li>
             </ul>
           </div>
@@ -75,7 +75,7 @@ export const Footer: React.FC = () => {
         </div>
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-gray-dark tracking-widest uppercase">
-          <p>© 2026 DEZIGN - Todos os direitos reservados.</p>
+          <p>© 2026 DEZIGN - Todos os direitos reservados.</p><a href="#" className="hover:text-white transition-colors">ResolvaTech</a>
           <div className="flex gap-8">
             <a href="#" className="hover:text-white transition-colors">Privacidade</a>
             <a href="#" className="hover:text-white transition-colors">Termos</a>
