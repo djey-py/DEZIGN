@@ -44,7 +44,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-6">
               <li className="flex items-start gap-4 text-gray-dark">
                 <MapPin size={20} className="text-primary shrink-0" />
-                <span>XXXXXX</span>
+                <span>XXXXX</span>
               </li>
               <li className="flex items-center gap-4 text-gray-dark">
                 <Phone size={20} className="text-primary shrink-0" />
