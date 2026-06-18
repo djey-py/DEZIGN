@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #17D6D6;
+  --color-primary-dark: #0FA8A8;
+  --color-bg-main: #0F1724;
+  --color-bg-secondary: #1C2738;
+  --color-text-white: #FFFFFF;
+  --color-gray-light: #E8E8E8;
+  --color-gray-dark: #6B7280;
+
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-main text-gray-light antialiased;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-text-white font-medium tracking-tight;
+  }
+}
+
+.glass-effect {
+  background: rgba(28, 39, 56, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #17D6D6 0%, #0FA8A8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gradient-brand {
+  background: linear-gradient(135deg, #17D6D6 0%, #0FA8A8 100%);
+}
+
