@@ -50,10 +50,22 @@ export const Header: React.FC = () => {
         </nav>
 
         <div className="hidden lg:block">
-          <button className="bg-gradient-brand text-bg-main px-6 py-3 rounded-none text-xs font-bold uppercase tracking-widest hover:brightness-110 transition-all shadow-lg shadow-primary/20">
-            Solicitar Atendimento Exclusivo
-          </button>
-        </div>
+  <button
+    onClick={() => {
+      const message = encodeURIComponent(
+        'Olá! Gostaria de solicitar um atendimento exclusivo. Tenho interesse em conhecer melhor as soluções de mobiliário e gostaria de receber mais informações.'
+      );
+
+      window.open(
+        `https://wa.me/244935204868?text=${message}`,
+        '_blank'
+      );
+    }}
+    className="bg-gradient-brand text-bg-main px-5 py-2.5 rounded-none text-[11px] font-bold uppercase tracking-widest hover:brightness-110 transition-all shadow-lg shadow-primary/20"
+  >
+    Solicitar Atendimento
+  </button>
+</div>
 
         {/* Mobile Menu Button */}
         <button
@@ -90,9 +102,21 @@ export const Header: React.FC = () => {
                   {item.name}
                 </a>
               ))}
-              <button className="bg-gradient-brand text-bg-main px-8 py-4 rounded-none text-sm font-bold uppercase tracking-widest mt-4">
-                Solicitar Atendimento Exclusivo
-              </button>
+              <button
+  onClick={() => {
+    const message = encodeURIComponent(
+      'Olá! Gostaria de solicitar um atendimento exclusivo. Tenho interesse em conhecer melhor as soluções de mobiliário e gostaria de receber mais informações.'
+    );
+
+    window.open(
+      `https://wa.me/244935204868?text=${message}`,
+      '_blank'
+    );
+  }}
+  className="bg-gradient-brand text-bg-main px-6 py-3 text-xs font-bold uppercase tracking-widest hover:brightness-110 transition-all"
+>
+  Solicitar Atendimento Exclusivo
+</button>
             </nav>
           </motion.div>
         )}
